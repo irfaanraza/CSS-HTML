@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+            <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+            <div class="container">
+                  <div class="navbar">
+                        <img src="images/PointInsider.png" class="logo" />
+                        <nav>
+                              <ul id="menuList">
+                                    <li><a href=""> Products</a></li>
+                                    <li><a href=""> Media Accessories</a></li>
+
+                                    <li><a href=""> VR Remotes</a></li>
+
+                                    <li><a href=""> Other Tools</a></li>
+                              </ul>
+                        </nav>
+                        <img
+                              src="images/menu.png"
+                              class="menu-icon"
+                              onclick="togglemenu()"
+                        />
+                  </div>
+                  <div class="row">
+                        <div class="col-1">
+                              <h2>PSA 4 V2</h2>
+                              <h3>Wireless Controller for PSA 4</h3>
+                              <p>Compatibility</p>
+                              <h4>$ 300</h4>
+                              <button>
+                                    Buy Now <img src="./images/arrow.png" />
+                              </button>
+                        </div>
+                        <div class="col-2">
+                              <img
+                                    src="./images/controller.png"
+                                    class="controller"
+                              />
+                              <div class="color-box"></div>
+                              <div class="add-btn">
+                                    <img
+                                          src="./images/add.png"
+                                          class="add-btn"
+                                    />
+                                    <p><small>Add to Cart</small></p>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="social-links">
+                        <img src="./images/fb.png" />
+                        <img src="./images/tw.png" />
+                        <img src="./images/ig.png" />
+                  </div>
+            </div>
+      </body>
+</html>
+<script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                  menuList.style.maxHeight = "130px";
+            } else {
+                  menuList.style.maxHeight = "0px";
+            }
+      }
+</script>
